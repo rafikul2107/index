@@ -1,0 +1,456 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+   /*font-family: 'Montserrat', sans-serif;
+font-family: 'Satisfy', cursive;*/
+}
+/* navebar design start */
+h1{
+    font-size:2.5rem;
+    text-align: center;
+    
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+    
+
+}
+a{
+    text-decoration:none;
+    color:#fff;
+    font-size:1.5rem;
+}
+p{
+font-size: 1.2rem;
+text-align: justify;
+}
+.dotted-hr{
+    border: 6px dotted #fff;
+    border-bottom: none;
+    width: 70px;
+    margin:5px auto;
+ }
+
+.navbar{
+    background-color:#40868b;
+    padding: 1% 7%;
+    text-align: center;
+}
+
+.logo1{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.nav-heading h1{ 
+    color: #fff;
+    text-align:center;
+    margin: 0;
+    padding: 10px;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.nav-menu a{
+   
+    
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0;
+    padding: 10px;
+}
+.nav-menu a:hover{
+    background-color: #757575;
+    cursor: pointer;
+}
+
+[class*="col-"]{
+    float:left;
+    padding: 10px;
+}
+/* for mobile*/
+[class*="col-"]{
+    width:100%;
+}
+
+
+.navbar::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+/* navbar design */
+
+
+
+ /* stert profile design */
+.profile{
+    padding: 120px 10px;
+    text-align: center;
+    position: relative;
+}
+.profile .top-weather{
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    transition: transform 2s;
+    
+}
+.profile .top-weather:hover{
+    transform:rotate(360deg);
+}
+.profile-dsc h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+}
+
+.profile-dsc P{
+    color: #b2afaf;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+   
+}
+
+
+.profile .bottom-weather{
+    position: absolute;
+    bottom:10px;
+    left:  50px;
+    transition: 2s;
+    padding-bottom: 10px;
+    
+}
+.profile .bottom-weather:hover{
+    transform:rotate(360deg);
+}
+
+.profile::after{
+    contain: '';
+    display: table;
+    clear: both;
+}
+ /*end profile design */
+
+
+   /*about me design */
+    .about-me{
+        background-color: #39a4ac;
+        padding:.1% 7%px;
+        color:#fff;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif
+    }
+
+    .about-image img{
+        border: 5px solid #fff;
+        border-radius: 50%;
+        height: 220px;
+        width: 200px;
+       
+
+    }
+    .about-image{
+        padding-top: 50px;
+    }
+
+    .about-me h2{
+            padding-top: 40px ;
+            line-height: 0;
+     }
+        .about-me p{
+            text-align: center;
+        }
+
+ .about-me::after{
+    content:'';
+    display:table;
+    clear:both;
+ }
+
+.aboutme-desc p a{
+    font-size: 1.2rem;
+}
+
+
+ .aboutme-hr{
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+ }
+ .cv-button{
+    background-color: #052d2f;
+    border: none;
+    border-radius: 15Px;
+    padding: 15px;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px;
+ }
+
+
+
+   /*end about me design */
+
+   
+/* Strart professional  exprerience */
+
+.professionaal-experience{
+    padding: 1% 0%;
+}
+.professionaal-experience .cord{
+    background-color: #a39e9e;
+    border-radius: 5px;
+    padding: 10px;
+     height: 500px; 
+    transition: 3s;
+
+}
+.professionaal-experience .cord:hover{
+    box-shadow:0px 4px 8px 5px #535252;
+}
+.cord-title h2{
+    text-align: center;
+    background-color: #757575;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+}
+.card-icon{
+    text-align: center;
+}
+.card-icon .work-icon{
+    border: 2px #5f0ce6 solid;
+    border-radius: 100%;
+    padding: 10px;
+    
+}
+.cord-desc li {
+    padding: 5px;
+}
+.skill-containar{
+    padding-right: 45px;
+}
+.skill-containar li{
+    list-style: none;
+    font-weight: bold;
+    margin: 20px 10px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.skill-containar li::before{
+    content: '';
+    position: absolute;
+    top:calc(100% + 5px);
+    left: 0;
+    background-color: rgb(86,86,153,0.5);
+   
+    width: 100%;
+    height: 15px;
+    border-radius: 100px;
+}
+
+
+.skill-containar li::after{
+    content: '';
+    position: absolute;
+    top:calc(100% + 5px);
+    left: 0;
+    background-color: rgb(86,86,153,1);
+   
+    width: 0%;
+    height: 15px;
+    border-radius: 100px;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.skill-containar li.html::after{
+    animation-name: html;
+}
+@keyframes html {
+    to{
+        width: 90%;
+    }
+}
+
+.skill-containar li.css::after{
+    animation-name: css;
+}
+@keyframes css {
+    to{
+        width: 80%;
+    }
+}
+.skill-containar li.jq::after{
+    animation-name:jq;
+}
+@keyframes jq {
+    to{
+        width: 70%;
+    }
+}
+.skill-containar li.bo::after{
+    animation-name: bo;
+}
+@keyframes bo {
+    to{
+        width: 30%;
+    }
+}
+.skill-containar li.js::after{
+    animation-name: js;
+}
+@keyframes js {
+    to{
+        width: 25%;
+    }
+}
+.cv-button{
+    cursor: pointer;
+}
+
+
+
+
+
+.professionaal-experience::after{
+    display: table;
+    content: '';
+    clear: both;
+} 
+/* end professional  exprerience */
+
+/* achievment contact start */
+.achievment-contact{
+    padding: 1% 7%;
+    background-color: #39a4ac;
+    color: #fff;
+}
+
+
+
+
+.contact-link{
+   
+    text-align: center;
+  
+}
+
+.contact-me input, textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    margin-top: 10px;
+}
+
+.contact-me button{
+    border: none;
+    border-radius: 10px;
+    background-color: #052d2f;
+    padding: 5px 30px;
+    margin-top: 20px ;
+    margin-right: 5px;
+    margin-left: 50px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    width: 100px;
+}
+
+.contact-me button:hover{
+    background-color: transparent;
+    border: #052d2f 2px solid;
+     border-radius: 10px;
+
+}
+
+.contact-link{
+    text-align: center;
+    padding: 1% 7%;
+    
+
+}
+.contact-link h2{
+    width: 100%;
+}
+ /* /* .media-btn {
+    padding: 10px;
+    margin-right: 20px; 
+    width: 100%; 
+} */
+ .media-btn .butn{
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 32px;
+    padding: 2px;
+    width: 12%;
+    margin: 5px;
+}
+
+.media-btn .butn:hover{
+    background-color: #84b2cd;
+} 
+
+
+
+
+
+.achievment-contact::after{
+    display: table;
+    content: '';
+    clear: both;
+    
+}
+/* achievment contact end */
+/* stert footer desigen */
+.footer{
+    background-color: #052d2f;
+    padding: 2% 0%;
+    text-align: center;
+
+}
+.footer-header a{
+    display: block;
+    padding: 10px;
+    font-size: .8rem;
+}
+span{
+    color:red
+        
+    
+}
+.footer-decs{
+    color: #fff;
+}
+
+
+
+
+
+
+.footer::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+/* stert footer desigen */

@@ -1,0 +1,134 @@
+/*gor desktop*/
+.col-1{width:8.33%;}
+.col-2{width:16.66%;}
+.col-3{width:25%;}
+.col-4{width:33.33%;}
+.col-5{width:41.66%;}
+.col-6{width:50%;}
+.col-7{width:58.33%;}
+.col-8{width:66.66%;}
+.col-9{width:75%;}
+.col-10{width:83.33%;}
+.col-11{width:91.66%;}
+.col-12{width:100%;}
+.nav-logo{
+    text-align: left;
+}
+/* navbar stert  */
+.nav-heading h1{
+    text-align: right;
+}
+.nav-menu{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav-menu a{
+    padding: 5px 10px;
+    margin: 20px 0;
+    background-color: transparent;
+}
+/* navbar end */
+
+
+/*starts profile design */
+
+.profile .top-weather{
+    top:30px;
+    right:100px;
+    width: 120px;
+    transition: width 5s transform 3s;
+}
+.profile .top-weathe:hover{
+    width: 300px;
+}
+.profile .bottom-weather{
+    left:140px;
+    width: 120px;
+    transition: width 5s transform 3s;
+}
+.profile .bottom-weathe:hover{
+    width: 140px;
+}
+.profile-dsc P{
+    color: #757575;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom:-40px;
+    width: 50%;
+}
+
+/*end profile design */
+
+
+
+/*end about me design */
+.about-image{
+    margin-top: 150px;
+}
+.about-image img{
+    height: 250px;
+    width: 250px;
+}
+.aboutme-desc p{
+    text-align: left;
+}
+.aboutme-hr{
+    width: 100%;
+}
+.cv-button{
+    margin-left:300px;
+    
+}
+/*end about me design */
+
+
+/* Strart professional  exprerience */
+.professionaal-experience{
+    padding: 1% 7%;
+}
+
+/* end professional  exprerience */
+
+/* achievment contact start */
+.achivment{
+    padding-right: 50px;
+}
+.contact-me button{
+    width: 120px;
+}
+.contact-link{
+    text-align: center;
+    position: relative;
+}
+.contact-link h2{
+    width: 150%;
+    text-align: left;
+    
+}
+/* .media-btn {
+    padding: 10px;
+    margin-right: 20px; 
+    width: 100%; } */
+   .media-btn .butn {
+        border: none;
+        border-radius: 88px;
+        cursor: pointer;
+        font-size: 32px;
+        padding: 20px;
+        width: 26%;
+        margin: 26px;
+
+      }
+  .media-btn{
+    position: absolute;
+    right: -60px;
+  }
+/* achievment contact start */
+/* achievment contact start */
+.footer-header a{
+    display:inline-block;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px;
+}
+/* achievment contact start */
